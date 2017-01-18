@@ -1,21 +1,21 @@
 # num-to-text
 
-0 r
-
-1 n
+1 l
 
 2 t
 
-3 m
+3 c
 
 4 d
 
 5 s
 
-6 c
+6 f
 
-7 f
+7 g
 
-8 l
+8 m
 
-9 g
+9 n
+
+0 r
