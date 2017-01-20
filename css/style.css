@@ -21,9 +21,19 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	color: #fff;
-	background-color: #445;
+	background-color: #666;
+}
+
+.results-panel {
+	margin-top: 10px;
+	background-color: #333;
+	color: #fff;
+}
+
+.result-item {
+	margin: 5px;
 }
 
 a {

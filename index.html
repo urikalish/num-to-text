@@ -13,9 +13,19 @@
 	</head>
 	<body ng-controller="mainCtrl">
 		<div id="main-panel" class="main">
-			<button ng-click='go()'>GO</button>
-			<div ng-repeat="stat in model.stats track by $index">
-				{{stat}}
+			<div>
+				<span>0123456789:</span>
+				<input type="text" ng-model="model.map"></input>
+				<span>Fillers:</span>
+				<input type="text" ng-model="model.fillers"></input>
+				<span>Number:</span>
+				<input type="text" ng-model="model.number"></input>
+				<button ng-click='go()'>Num2Text</button>
+				<div class="results-panel">
+					<div ng-repeat="item in model.items track by $index" class="result-item">
+						{{item}}
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
