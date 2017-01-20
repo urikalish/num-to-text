@@ -2,16 +2,25 @@ angular.module('mainApp').controller('mainCtrl', function mainCtrl($scope, $docu
 
   var i;
     
-  function go() {
-    $scope.model.items = mainServ.getItems($scope.model.number, $scope.model.map, $scope.model.fillers);
+  function go(item) {
+    var index = item.number.index;
+    $scope.model.numbers[index].results = mainServ.getItems($scope.model.numbers[index].number, $scope.model.map, $scope.model.fillers);
   }
 
   $scope.model = {
-    number: 123,
     map: 'rltcdspgmn',
     fillers: 'aeiouyh',
-    stats: []
+    numbers: []    
   };
+
+  for (i = 0; i < 6; i++) {
+    $scope.model.numbers.push({
+      index: i,
+      number: '',
+      results: []
+    });  
+  }
+
   $scope.go = go;
 
 });

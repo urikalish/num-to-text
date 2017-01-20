@@ -26,9 +26,32 @@ body {
 	background-color: #666;
 }
 
+.settings-panel {
+	background-color: #222;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.numbers-panel {
+	display: flex;
+	justify-content: space-between;
+}
+
+.number-panel {
+
+}
+
+.number-input {
+	width: 40px;
+}
+
+.number-button {
+	width: 80px;
+}
+
 .results-panel {
 	margin-top: 10px;
-	background-color: #333;
+	background-color: #444;
 	color: #fff;
 }
 

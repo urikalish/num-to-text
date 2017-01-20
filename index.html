@@ -14,16 +14,22 @@
 	<body ng-controller="mainCtrl">
 		<div id="main-panel" class="main">
 			<div>
-				<span>0123456789:</span>
-				<input type="text" ng-model="model.map"></input>
-				<span>Fillers:</span>
-				<input type="text" ng-model="model.fillers"></input>
-				<span>Number:</span>
-				<input type="text" ng-model="model.number"></input>
-				<button ng-click='go()'>Num2Text</button>
-				<div class="results-panel">
-					<div ng-repeat="item in model.items track by $index" class="result-item">
-						{{item}}
+				<div class="settings-panel">
+					<span>0123456789:</span>
+					<input type="text" ng-model="model.map"></input>
+					<span>Fillers:</span>
+					<input type="text" ng-model="model.fillers"></input>
+				</div>
+				<div class="numbers-panel">
+					<div ng-repeat="number in model.numbers" class="number-panel">
+						<span>Number:</span>
+						<input type="text" ng-model="number.number" class="number-input"></input>
+						<button ng-click="go(this)" class="number-button">Num2Text</button>
+						<div class="results-panel">
+							<div ng-repeat="result in number.results" class="result-item">
+								{{result}}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

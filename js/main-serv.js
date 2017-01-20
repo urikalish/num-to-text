@@ -23,8 +23,8 @@ angular.module('mainApp').factory('mainServ', function mainServ(words) {
 		return stats;
 	}
 
-	function getItems(numberStr, map, fillers) {
-		var i, items, regExpStr, reg, words;
+	function getMatches(numberStr, map, fillers) {
+		var i, matches, regExpStr, reg, words;
 		words = getWords();
 		regExpStr = '^[' + fillers + ']{0,3}';
 		for (i = 0; i < numberStr.length; i++) {
@@ -32,11 +32,21 @@ angular.module('mainApp').factory('mainServ', function mainServ(words) {
 		}
 		regExpStr += '$';
 		reg = new RegExp(regExpStr, 'ig');		
-		items = [];
+		matches = [];
 		for (i = 0; i < words.length; i++) {
 			if (reg.test(words[i])) {
-				items.push(words[i]);
+				matches.push(words[i]);
 			}
+		}
+		return matches;	
+	}
+
+	function getItems(numberStr, map, fillers) {
+		var i, j, items, m1;
+		items = [];
+		m1 = getMatches(numberStr, map, fillers);
+		for (i = 0; i < m1.length; i++) {
+			items.push(m1[i]);
 		}
 		return items;
 	}
