@@ -15,7 +15,7 @@ angular.module('mainApp').controller('mainCtrl', function mainCtrl($scope, $docu
       },
       {
         digit: '1',
-        options: 't|d'
+        options: 'd|t|th'
       },
       {
         digit: '2',
