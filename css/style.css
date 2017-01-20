@@ -30,7 +30,7 @@ body {
 	background-color: #666;
 	padding: 10px;
 	margin-bottom: 10px;
-	height: 40px;
+	height: 40px;	
 }
 
 .title {
@@ -38,19 +38,25 @@ body {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 17px;
-	margin-right: 30px;	
+	margin-right: 20px;
+	display: inline-block;	
+}
+
+.map-entry {
+	display: inline-block;
+	margin-right: 10px;
 }
 
 .map-input {
 	font-weight: bold;
-	width: 127px;
-	margin-right: 30px;
+	width: 50px;
+	margin-right: 10px;
 }
 
 .fillers-input {
 	font-weight: bold;
-	width: 127px;
-	margin-right: 30px;
+	width: 100px;
+	margin-right: 20px;
 }
 
 .numbers-panel {

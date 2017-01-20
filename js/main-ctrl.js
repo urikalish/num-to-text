@@ -8,8 +8,49 @@ angular.module('mainApp').controller('mainCtrl', function mainCtrl($scope, $docu
   }
 
   $scope.model = {
-    map: 'rltcdspgmn',
-    fillers: 'aehiouwy',
+    map: [
+      {
+        digit: '0',
+        options: 'z|s'
+      },
+      {
+        digit: '1',
+        options: 't|d'
+      },
+      {
+        digit: '2',
+        options: 'n'
+      },
+      {
+        digit: '3',
+        options: 'm'
+      },
+      {
+        digit: '4',
+        options: 'r'
+      },
+      {
+        digit: '5',
+        options: 'l'
+      },
+      {
+        digit: '6',
+        options: 'j|sh|ch'
+      },
+      {
+        digit: '7',
+        options: 'k|q|c|g'
+      },
+      {
+        digit: '8',
+        options: 'f|ph|v'
+      },
+      {
+        digit: '9',
+        options: 'b|p'
+      },
+    ],
+    fillers: 'aeiouwxy',
     numbers: []    
   };
 
