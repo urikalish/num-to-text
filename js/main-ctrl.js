@@ -9,7 +9,7 @@ angular.module('mainApp').controller('mainCtrl', function mainCtrl($scope, $docu
 
   $scope.model = {
     map: 'rltcdspgmn',
-    fillers: 'aeiouyh',
+    fillers: 'aehiouwy',
     numbers: []    
   };
 

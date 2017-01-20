@@ -23,13 +23,24 @@ body {
 	margin: 0;
 	padding: 10px;
 	color: #fff;
-	background-color: #666;
+	background-color: #444;
 }
 
 .settings-panel {
-	background-color: #222;
+	background-color: #666;
 	padding: 10px;
 	margin-bottom: 10px;
+	height: 40px;
+}
+
+.map-input {
+	font-weight: bold;
+	width: 127px;
+}
+
+.fillers-input {
+	font-weight: bold;
+	width: 127px;
 }
 
 .numbers-panel {
@@ -42,7 +53,8 @@ body {
 }
 
 .number-input {
-	width: 40px;
+	font-weight: bold;
+	width: 33px;
 }
 
 .number-button {
@@ -51,8 +63,10 @@ body {
 
 .results-panel {
 	margin-top: 10px;
-	background-color: #444;
+	background-color: #222;
 	color: #fff;
+	height: calc(100% - 100px);
+	overflow: auto;
 }
 
 .result-item {
